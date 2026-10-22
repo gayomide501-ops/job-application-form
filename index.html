@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete a job application form with validated fields.">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Please complete the form below to apply for a position.</p>
+    </header>
+
+    <main>
+        <form action="#" method="POST" enctype="multipart/form-data">
+
+            <div>
+                <label for="full-name">Full Name</label>
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    autocomplete="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="08012345678"
+                    pattern="0[0-9]{10}"
+                    title="Enter an 11-digit phone number starting with 0."
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="position">Position Applying For</label>
+                <select id="position" name="position" required>
+                    <option value="">-- Select a position --</option>
+                    <option value="frontend-developer">Frontend Developer</option>
+                    <option value="administrative-assistant">Administrative Assistant</option>
+                    <option value="customer-service">Customer Service Representative</option>
+                    <option value="laboratory-assistant">Laboratory Assistant</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="start-date">Available Start Date</label>
+                <input
+                    type="date"
+                    id="start-date"
+                    name="start-date"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="cover-letter">Cover Letter</label>
+                <textarea
+                    id="cover-letter"
+                    name="cover-letter"
+                    rows="6"
+                    minlength="20"
+                    placeholder="Tell us why you are suitable for this position."
+                    required
+                ></textarea>
+            </div>
+
+            <div>
+                <label for="resume">Upload Your Resume (PDF, DOC, or DOCX)</label>
+                <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                    accept=".pdf,.doc,.docx"
+                    required
+                >
+            </div>
+
+            <fieldset>
+                <legend>How did you hear about this job?</legend>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="website"
+                        name="source"
+                        value="company-website"
+                        required
+                    >
+                    <label for="website">Company website</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="social-media"
+                        name="source"
+                        value="social-media"
+                    >
+                    <label for="social-media">Social media</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="job-board"
+                        name="source"
+                        value="job-board"
+                    >
+                    <label for="job-board">Job board</label>
+                </div>
+
+                <div>
+                    <input
+                        type="radio"
+                        id="referral"
+                        name="source"
+                        value="referral"
+                    >
+                    <label for="referral">Friend or referral</label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Job Application Form</p>
+    </footer>
+</body>
+</html>
